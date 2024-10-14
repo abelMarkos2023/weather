@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forcast</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">ClearSky</a>
+    </header>
+    <main class="main">
+        <div class="card">
+            <div class="userInputs">
+                <input type="text" id="cityInput" placeholder="Enter city name">
+                <input type="text" placeholder="Enter ZIP code here" id="zip">
+                <textarea name=""  id="feeling" placeholder="How Do you feel..." rows="4"></textarea>
+                <button type="button" id="generate">Get Weather</button>
+            </div>
+        </div>
+        <div class="card result">
+            <div class="weatherData">
+                <div id="cityName" class = "data-field">
+                    <p>Weather Data For </p>
+                    <span></span>
+                </div>
+                <div id="zip-text" class = "data-field">
+                    <p>ZIP Code </p>
+                    <span></span>
+                </div>
+                <div id="feeling-text" class = "data-field">
+                    <p>Feeling </p>
+                    <span></span>
+                </div>
+                <div id="date" class = "data-field">
+                    <p>Weather Date </p>
+                    <span></span>
+                </div>
+                <div id="temperature" class = "data-field">
+                    <p>temperature </p>
+                    <span>&deg;C</span> 
+                </div>
+                <div id="description" class = "data-field">
+                    <p>Description</p>
+                    <span></span>
+                </div>
+                <div id="humidity" class = "data-field">
+                    <p>Humidity </p>
+                    <span></span>
+                </div>
+                <div id="wind" class = "data-field">
+                    <p>Wind Speed </p>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/app.js"></script>
+</body>
+</html>
